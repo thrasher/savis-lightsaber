@@ -99,7 +99,7 @@ module cosblock(w = 100, h = 100) {
 	difference() {
 		square(w);
 		COS_H = (CLIP_D/2 + CLIP_WALL)* cos(ANG/2);
-		echo(COS_H);
+		// echo(COS_H);
 		polygon(coswave_2d(COS_H, w));
 	}
 }
