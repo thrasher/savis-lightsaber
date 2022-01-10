@@ -40,7 +40,7 @@ def render(parts):
 
 def main():
 	parts = [
-	"lightsaber_mount"
+	"mount"
 	 ]
 	render(parts)
 

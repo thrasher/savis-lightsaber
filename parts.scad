@@ -15,7 +15,7 @@ CLIP_WALL = 2;
 LS_WIDEST_DIA = 75; // 66.7 as measured, the widest part of any saber parts
 ANG = 110; // angle of opening for clip
 
-module lightsaber_mount() {
+module mount() {
 	difference() {
 		translate([0, 0, -CLIP_HT/2]) // center on the Z access
 		linear_extrude(height = CLIP_HT)
@@ -42,7 +42,6 @@ module lightsaber_mount() {
 		drywall_screw();
 	}
 }
-// lightsaber_mount();
 
 module clip_2d() {
 	// the clip
@@ -125,9 +124,8 @@ module render(part, location, named) {
 		MOVE = (part != "all") ?  [0, 0, 0] : location;
 		translate(MOVE) children();
 	}
-	echo(parent_module(0));
 }
 
 PART = "all";
 echo(str("render ", PART));
-render(PART, [0, 0, 0], "lightsaber_mount") lightsaber_mount();
+render(PART, [0, 0, 0], "mount") mount();
