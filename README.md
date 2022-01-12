@@ -6,7 +6,7 @@ Wall mount for lightsaber.
 
 ## Print Settings
 
-Three perimiters and 30% infill for strength.
+Three perimeters and 30% infill for strength.
 
 ## Post-Printing Installation
 
